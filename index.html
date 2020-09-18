@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/outlines.css">
+    <meta name="keywords" content="Boyev Yaroslav, Resume, CV, Portfolio, Experience, Projects, Achievements">
+    <meta name="description" content="Boyev Yaroslav's Resume and Portfolio">
+    <title>Boyev Yaroslav M33021</title>
+</head>
+
+<body>
+    <header>
+        <h1>Boyev Yaroslav's Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#Summary">About me</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Profile">
+            <img src="assets/images/profile.jpg" alt="Boyev Yaroslav" style="max-width:10%; max-height:10%">
+            <h3>It's not a <sub>bug</sub>, it's a <sup>feature</sup></h3>
+        </section>
+
+        <section id="Summary">
+            <h2>Summary</h2>
+            <article>
+                <h3>About me</h3>
+                As a child, I have fallen in love with games and spent a lot of time enjoying them. Bit by bit, I started to admire those, who
+                create such entertaining worlds and decided to become one of them. That is how I started coding and became obsessed
+                with the idea of using my programming skills to create games and apps others would love. In 2015 I first started tinkering
+                with Unity and, later on, Unreal Engine 4. In 2018 I enrolled at one of the best IT universities - ITMO, founded my own
+                gamedev club, and got my first job as a Unity Developer one year later. By that moment I was already proficient in C# and
+                C++.
+                As a Unity Developer, I managed to further improve my programming and solution solving skills, as well as acquire solid
+                communication and management skill. I got proficient in the development of mobile and desktop games, setting up
+                client-server communication, and usage of different profiling tools. What is more, I had experience leading a small project.
+            </article>
+            <aside>
+                <h4>Skills/Interests:</h4> 
+                <p>Unity, C#, C++, Unreal Engine, Java, Git, SQL, Photoshop, Android, iOS</p>
+            </aside>
+        </section>
+
+        <section id="Experience">
+            <h2>Experience</h2>
+            <dl>
+                <dt>
+                    <h3><img src="assets/images/appfox.png" alt="AppFox logo" width="64" height="64" style="vertical-align:middle"> <strong>Unity Developer</strong></h3>
+                </dt>
+                <dd>
+                    <p>
+                        <b>APPFOX</b><br>
+                        <i>Aug 2019 - Present (1 year 2 months +)</i><br>
+                        I have participated in the development of several different projects, some of them being iOS\Android games.
+                        During that time I have designed and developed frontend communication with a server, programmed
+                        gameplay mechanics as well as worked with custom file serialization and app profiling. Also had a chance to
+                        act as the lead programmer on a small project.
+                    </p>
+                </dd>
+              </dl>
+        </section>
+
+        <section id="Skills">
+            <h2>Skills</h2>
+            <h4>Professional skills:</h4>
+            <ul>
+                <li>Unity</li>
+                <li>C#</li>
+                <li>Game development</li>
+                <li>Mobile Games</li>
+                <li>Git</li>
+                <li>Object-Oriented Programming (OOP)</li>
+            </ul>
+
+            <h4>Extra skills:</h4>
+            <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Unreal Engine</li>
+                <li>Agile Methodologies</li>
+                <li>Android</li>
+                <li>iOS</li>
+            </ul>
+            <aside>
+                <h3>Languages:</h3>
+                <ul>
+                    <li>Russian</li>
+                    <li>English - Advanced</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="Education">
+            <h2>Education</h2>
+            <dl>
+                <dt>
+                    <h3><b>Nazarbayev Intellectual Schools</b></h3>
+                </dt>
+                <dd>
+                    High School Diploma, Mathematics and Computer Science
+                </dd>
+                <dt>
+                    <h3><b>ITMO University</b></h3>
+                </dt>
+                <dd>
+                    Bachelor of Technology - BTech, Computer Science
+                </dd>
+              </dl>
+        </section>
+
+        <section id="CodePart">
+            <h2>Teacher asked to insert code</h2>
+            <code><pre>public IPromise CreatePupil(string <var>name</var>, List<int> <var>soundIds</var>, List<string> <var>addNames</var> = null)
+                {
+                    var <var>args</var> = _settings.PupilStoreArgs(<var>name</var>, <var>soundIds</var>, <var>addNames</var>);
+        
+                    return SendRequest<BaseResponse>(ApiMethodType.PUPIL_CREATE, args)
+                        .Then(<var>x</var> => Promise.Resolved())
+                        .Catch(<var>ex</var> =>
+                        {
+                            Debug.LogError("Pupil store failed: " + ex.Message);
+                            throw ex;
+                        });
+                }</pre></code>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Author: Boyev Yaroslav </p>
+        <p><time datetime="18.09.2020">18 Sep 2020</time></p>
+    </footer>
+</body>
+
+</html>
