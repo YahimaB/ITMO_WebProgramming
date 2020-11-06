@@ -40,26 +40,30 @@
     </header>
 
     <main>
-        <section id="Profile">
-            <h3><img src="assets/images/profile.jpg" alt="Boyev Yaroslav" style="max-width:10%; max-height:10%">It's not a <sub>bug</sub>, it's a <sup>feature</sup> (links can be added) </h3>
-        </section>
+        <div class="info">
+            <section id="Profile" style="width: fit-content; min-width: 350px;">
+                <img src="assets/images/profile.jpg" alt="Boyev Yaroslav" style="max-width:100%; vertical-align: top;">
+                <h3>It's not a <sub>bug</sub>, it's a <sup>feature</sup></h3>
+            </section>
 
-        <section id="Summary" class="w3-card-4">
-            <h2>Summary</h2>
+            <section id="Summary" style="min-width: 200px;" class="w3-card-4">
+                <h2>Summary</h2>
 
-            <aside>
-                <h4>Skills/Interests:</h4>
-                <p>Unity, C#, C++, Unreal Engine, Java, Git, SQL, Photoshop, Android, iOS</p>
-            </aside>
+                <aside>
+                    <h4>Skills/Interests:</h4>
+                    <p>Unity, C#, C++, Unreal Engine, Java, Git, SQL, Photoshop, Android, iOS</p>
+                </aside>
 
-            <article>
-                <h3>About me</h3>
-                As a child, I have fallen in love with games and spent a lot of time enjoying them. Bit by bit, I started to admire those, who create such entertaining worlds and decided to become one of them. That is how I started coding and became obsessed with the
-                idea of using my programming skills to create games and apps others would love. In 2015 I first started tinkering with Unity and, later on, Unreal Engine 4. In 2018 I enrolled at one of the best IT universities - ITMO, founded my own gamedev
-                club, and got my first job as a Unity Developer one year later. By that moment I was already proficient in C# and C++. As a Unity Developer, I managed to further improve my programming and solution solving skills, as well as acquire solid
-                communication and management skill. I got proficient in the development of mobile and desktop games, setting up client-server communication, and usage of different profiling tools. What is more, I had experience leading a small project.
-            </article>
-        </section>
+                <article style="text-align:justify">
+                    <h3>About me</h3>
+                    As a child, I have fallen in love with games and spent a lot of time enjoying them. Bit by bit, I started to admire those, who create such entertaining worlds and decided to become one of them. That is how I started coding and became obsessed with the
+                    idea of using my programming skills to create games and apps others would love. In 2015 I first started tinkering with Unity and, later on, Unreal Engine 4. In 2018 I enrolled at one of the best IT universities - ITMO, founded my own
+                    gamedev club, and got my first job as a Unity Developer one year later. By that moment I was already proficient in C# and C++. As a Unity Developer, I managed to further improve my programming and solution solving skills, as well as
+                    acquire solid communication and management skill. I got proficient in the development of mobile and desktop games, setting up client-server communication, and usage of different profiling tools. What is more, I had experience leading
+                    a small project.
+                </article>
+            </section>
+        </div>
 
         <section id="Experience">
             <h2><i class="fa fa-money"></i>Experience</h2>
@@ -77,7 +81,26 @@
             </dl>
         </section>
 
-        <section id="Skills">
+        <section id="Education" style="float: right;">
+            <h2><i class="fa fa-book"></i>Education</h2>
+            <dl>
+                <dt>
+                    <h4><b>Nazarbayev Intellectual Schools</b></h4>
+                </dt>
+                <dd>
+                    High School Diploma, Mathematics and Computer Science
+                </dd>
+                <hr>
+                <dt>
+                    <h4><b>ITMO University</b></h4>
+                </dt>
+                <dd>
+                    Bachelor of Technology - BTech, Computer Science
+                </dd>
+            </dl>
+        </section>
+
+        <section id="Skills" style="width:auto; min-width: 400px;">
             <h2><i class="fa fa-asterisk"></i>Skills</h2>
 
             <aside>
@@ -88,7 +111,7 @@
                 </ul>
             </aside>
 
-            <h4>Professional skills:</h4>
+            <h4 style="white-space: nowrap;">Professional skills:</h4>
             <ul>
                 <li>Unity</li>
                 <li>C#</li>
@@ -109,26 +132,7 @@
             </ul>
         </section>
 
-        <section id="Education">
-            <h2><i class="fa fa-book"></i>Education</h2>
-            <dl>
-                <dt>
-                    <h4><b>Nazarbayev Intellectual Schools</b></h4>
-                </dt>
-                <dd>
-                    High School Diploma, Mathematics and Computer Science
-                </dd>
-                <hr>
-                <dt>
-                    <h4><b>ITMO University</b></h4>
-                </dt>
-                <dd>
-                    Bachelor of Technology - BTech, Computer Science
-                </dd>
-            </dl>
-        </section>
-
-        <section id="CodePart">
+        <section id="CodePart" style="clear: both;">
             <h2>Teacher asked to insert code &#128051</h2>
             <code><pre>public IPromise CreatePupil(string <var>name</var>, List<int> <var>soundIds</var>, List<string> <var>addNames</var> = null)
                 {
