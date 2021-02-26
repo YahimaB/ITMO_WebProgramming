@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="keywords" content="Boyev Yaroslav, Resume, CV, Portfolio, Experience, Projects, Achievements">
-    <meta name="description" content="Boyev Yaroslav's Resume and Portfolio">
+    <meta name="keywords" content="Boyev Yaroslav, Weather, CourseWork">
+    <meta name="description" content="Boyev Yaroslav's weather site">
     <style>
         html,
         body,
@@ -22,165 +22,174 @@
             font-family: "Roboto", sans-serif
         }
     </style>
-    <title>Boyev Yaroslav M33021</title>
+    <title>Boyev Yaroslav M33021 Weather</title>
 </head>
 
 <body>
-    <header>
-        <h1>Boyev Yaroslav's Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="#Profile">Profile</a></li>
-                <li><a href="#Summary">About me</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li id="contactBtn"><a href="#Contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <div class="info">
-            <section id="Profile" style="width: fit-content; min-width: 350px; height: 500px;">
-                <img id="toggleImage" src="assets/images/profile.jpg" alt="Boyev Yaroslav" style="width:100%;">
-            </section>
+        <div class="grid-container">
+            <div class="local">
+                <div class="local-header">
+                    <h1>Погода здесь</h1>
+                    <div class="close-btn-space">
+                        <button type="button" class="desktop">Click Me!</button>
+                        <input type="image" class="mobile" src="assets/images/close_btn.png" style="height: 100%;" />
+                    </div>
+                </div>
 
-            <section id="Summary" style="min-width: 200px;" class="w3-card-4">
-                <h2>Summary</h2>
+                <div class="local-cards">
+                    <div class="local-card-header">
+                        <h2>City</h2>
+                        <div class="local-card-header-content">
+                            <img src="assets/images/appfox.png" loading="lazy" alt="">
+                            <p>5 C</p>
+                        </div>
+                    </div>
 
-                <aside>
-                    <h4>Skills/Interests:</h4>
-                    <p>Unity, C#, C++, Unreal Engine, Java, Git, SQL, Photoshop, Android, iOS</p>
-                </aside>
+                    <ul class="card-param-list">
+                        <li class="card-param">
+                            <h4>Param</h4>
+                            <p>Param status</p>
+                        </li>
+                        <li class="card-param">
+                            <h4>Param</h4>
+                            <p>Param status</p>
+                        </li>
+                    </ul>
+                </div>
 
-                <article style="text-align:justify">
-                    <h3>About me</h3>
-                    As a child, I have fallen in love with games and spent a lot of time enjoying them. Bit by bit, I started to admire those, who create such entertaining worlds and decided to become one of them. That is how I started coding and became obsessed with the
-                    idea of using my programming skills to create games and apps others would love. In 2015 I first started tinkering with Unity and, later on, Unreal Engine 4. In 2018 I enrolled at one of the best IT universities - ITMO, founded my own
-                    gamedev club, and got my first job as a Unity Developer one year later. By that moment I was already proficient in C# and C++. As a Unity Developer, I managed to further improve my programming and solution solving skills, as well as
-                    acquire solid communication and management skill. I got proficient in the development of mobile and desktop games, setting up client-server communication, and usage of different profiling tools. What is more, I had experience leading
-                    a small project.
-                </article>
-            </section>
-        </div>
+            </div>
 
-        <section id="Experience">
-            <h2><i class="fa fa-money"></i>Experience</h2>
-            <dl>
-                <dt>
-                    <h4><strong>Unity Developer</strong></h4>
-                </dt>
-                <dd>
-                    <p>
-                        <b><img src="assets/images/appfox.png" alt="AppFox logo" width="32" height="32" style="vertical-align:middle">APPFOX</b>
-                        <br><i><time class="calendar">Aug 2019 - Present (1 year 2 months +)</time></i><br> I have participated in the development of several different projects, some of them being iOS\Android games. During that time I have designed and
-                        developed frontend communication with a server, programmed gameplay mechanics as well as worked with custom file serialization and app profiling. Also had a chance to act as the lead programmer on a small project.
-                    </p>
-                </dd>
-            </dl>
-        </section>
+            <div class="favourite">
+                <div class="favourite-header">
+                    <h1>Избранное</h1>
+                    <div class="search-area">
+                        <input type="search" id="city-search" placeholder="Добавить новый город" style="width: 100%;">
+                        <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                    </div>
+                </div>
 
-        <section id="Education" style="float: right;">
-            <h2><i class="fa fa-book"></i>Education</h2>
-            <dl>
-                <dt>
-                    <h4><b>Nazarbayev Intellectual Schools</b></h4>
-                </dt>
-                <dd>
-                    High School Diploma, Mathematics and Computer Science
-                </dd>
-                <hr>
-                <dt>
-                    <h4><b>ITMO University</b></h4>
-                </dt>
-                <dd>
-                    Bachelor of Technology - BTech, Computer Science
-                </dd>
-            </dl>
-        </section>
+                <div class="favourite-cards">
+                    <ul>
+                        <li class="weather-card">
+                            <div class="card-header">
+                                <h3>City</h3>
+                                <p>5 C</p>
+                                <img src="assets/images/appfox.png" loading="lazy" alt="" class="image">
+                                <div class="close-btn-space">
+                                    <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="card-param-list">
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-        <section id="Skills" style="width:auto; min-width: 400px;">
-            <h2><i class="fa fa-asterisk"></i>Skills</h2>
+                        <li class="weather-card">
+                            <div class="card-header">
+                                <h3>City</h3>
+                                <p>5 C</p>
+                                <img src="assets/images/appfox.png" loading="lazy" alt="" class="image">
+                                <div class="close-btn-space">
+                                    <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="card-param-list">
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-            <aside>
-                <h3><i class="fa fa-globe"></i>Languages:</h3>
-                <ul>
-                    <li>Russian</li>
-                    <li>English - Advanced</li>
-                </ul>
-            </aside>
+                        <li class="weather-card">
+                            <div class="card-header">
+                                <h3>City</h3>
+                                <p>5 C</p>
+                                <img src="assets/images/appfox.png" loading="lazy" alt="" class="image">
+                                <div class="close-btn-space">
+                                    <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="card-param-list">
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-            <h4 style="white-space: nowrap;">Professional skills:</h4>
-            <ul>
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Game development</li>
-                <li>Mobile Games</li>
-                <li>Git</li>
-                <li>Object-Oriented Programming (OOP)</li>
-            </ul>
+                        <li class="weather-card">
+                            <div class="card-header">
+                                <h3>City</h3>
+                                <p>5 C</p>
+                                <img src="assets/images/appfox.png" loading="lazy" alt="" class="image">
+                                <div class="close-btn-space">
+                                    <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="card-param-list">
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-            <h4>Extra skills:</h4>
-            <ul>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Unreal Engine</li>
-                <li>Agile Methodologies</li>
-                <li>Android</li>
-                <li>iOS</li>
-            </ul>
-        </section>
-
-        <div id="Contacts" class="modal">
-            <div class="modal-content">
-                <p style="text-align: center;">email: mail@gmail.com | phone: +7(962)1234123 | Git: https://github.com/profile</p>
+                        <li class="weather-card">
+                            <div class="card-header">
+                                <h3>City</h3>
+                                <p>5 C</p>
+                                <img src="assets/images/appfox.png" loading="lazy" alt="" class="image">
+                                <div class="close-btn-space">
+                                    <input type="image" src="assets/images/close_btn.png" class="close-btn" />
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="card-param-list">
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                    <li class="card-param">
+                                        <h4>Param</h4>
+                                        <p>Param status</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <section id="CodePart" style="clear: both;">
-            <h2>Teacher asked to insert code &#128051</h2>
-            <code><pre>public IPromise CreatePupil(string <var>name</var>, List<int> <var>soundIds</var>, List<string> <var>addNames</var> = null)
-                {
-                    var <var>args</var> = _settings.PupilStoreArgs(<var>name</var>, <var>soundIds</var>, <var>addNames</var>);
-        
-                    return SendRequest<BaseResponse>(ApiMethodType.PUPIL_CREATE, args)
-                        .Then(<var>x</var> => Promise.Resolved())
-                        .Catch(<var>ex</var> =>
-                        {
-                            Debug.LogError("Pupil store failed: " + ex.Message);
-                            throw ex;
-                        });
-                }</pre></code>
-            <pre> 
-                     /\
-                    /  \
-                   |  _ \                  _
-                   | / \ \                / \
-                   |/   \ \              /   \
-                   /     \ |        /\  /     \
-                  /|      \| ~  ~  /  \/       \
-          _______/_|_______\(o)(o)/___/\_____   \
-         /      /  |       (______)     \    \   \_
-        /      /   |                     \    \
-       /      /    |                      \    \
-      /      /     |                       \    \
-     /     _/      |                        \    \
-    /             _|                         \    \_
-  _/                                          \
-                                               \
-                                                \_
-                </pre>
-        </section>
-
     </main>
-
-    <footer>
-        <p> Author: Boyev Yaroslav </p>
-        <p><time datetime="18.09.2020">18 Sep 2020</time></p>
-    </footer>
 </body>
-<script type="text/javascript" src="assets/js/lab5.js"></script>
-<script type="text/javascript" src="assets/js/lab6.js"></script>
 
 </html>
